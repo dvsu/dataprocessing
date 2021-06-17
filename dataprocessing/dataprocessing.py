@@ -98,10 +98,10 @@ class GridProcessing:
     def grid_statistics(self, array: np.ndarray) -> dict:
         return {
             # "ref_temp": round(float(sensor_data["ref_temp"]), 3),
-            "mean_temp": round(np.mean(array), 3),
-            "max_temp": round(np.max(array), 3),
-            "min_temp": round(np.min(array), 3),
-            "median_temp": round(np.median(array), 3)
+            "mean": round(np.mean(array), 3),
+            "max": round(np.max(array), 3),
+            "min": round(np.min(array), 3),
+            "median": round(np.median(array), 3)
         }
 
     def _convert(self, raw_data: str, resized_column: int, resized_row: int) -> np.ndarray:
