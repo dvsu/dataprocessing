@@ -1,4 +1,4 @@
-from dataprocessing.dataprocessing import GridProcessing
+from dataprocessing import GridProcessing
 
 # Data length is 1024
 data = """
